@@ -1,0 +1,50 @@
+<% streams.forEach((stream)=>{ %>
+  <a
+    href="/event/<%= stream.event_url_string %>/<%= stream.id %>"
+    class="schedule-card mb-4 flex items-center justify-evenly p-2 bg-neutral-700 border border-white/10 shadow-lg hover:bg-neutral-600 transition-all duration-300"
+  >
+    <div class="col-span-1">
+      <div class="flex justify-center items-center gap-3 h-full">
+        <img
+          src="<%= stream.team1_logo.startsWith("https") ? stream.team1_logo : BASE_URL + stream.team1_logo %>"
+          width="60"
+          height="60"
+        />
+      </div>
+    </div>
+    <div
+      class="col-span-1 flex flex-col items-center justify-center gap-3"
+    >
+      <div>
+        <span class="text-xl text-rose-500 font-bold"
+          ><%= stream.competition.competition_name %></span
+        >
+      </div>
+      <div class="text-center">
+        <span class="text-white/80 font-medium text-lg">
+          <%= stream.title %>
+        </span>
+      </div>
+      <div class="text-center">
+        <span class="text-white/60">
+          <%= moment .tz(stream.date_time, "America/New_York")
+          .format("MMMM DD, YYYY ") %>
+        </span>
+        <br />
+        <span class="text-white/60">
+          <%= moment .tz(stream.date_time, "America/New_York")
+          .format("hh:mm A") %> ET</span
+        >
+      </div>
+    </div>
+    <div class="col-span-1">
+      <div class="flex justify-center items-center gap-3 h-full">
+        <img
+          src="<%= stream.team2_logo.startsWith("https") ? stream.team2_logo : BASE_URL + stream.team2_logo %>"
+          width="60"
+          height="60"
+        />
+      </div>
+    </div>
+  </a>
+  <% }) %>

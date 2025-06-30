@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply text-[#a6a9ad] font-semibold text-sm tracking-[.06em] hover:text-white;
+}
+
+table th {
+  @apply text-white text-start bg-[#2A2A2A] p-2;
+}
+
+table tr {
+  @apply last:border-b-0 border-b border-white/10 cursor-pointer bg-[#3E3E3E];
+}
+
+table tr:hover {
+  @apply bg-neutral-700/40 transition duration-500;
+}
+
+table td {
+  @apply p-4 text-white text-start;
+}
+
+h1 {
+  @apply text-3xl font-semibold text-white;
+}
+
+h2 {
+  @apply text-xl font-semibold text-white;
+}
+
+p {
+  @apply text-white;
+}
+
+.form-control {
+  @apply w-full bg-neutral-700 ps-4 h-12  outline-none focus:outline outline-offset-1 focus:outline-rose-500 text-white;
+}
+
+.topAd {
+  @apply flex
+}
