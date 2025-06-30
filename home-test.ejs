@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METHSTREAMS | Watch Reddit NBA, NFL, MLB, NHL</title>
+    
+    <link href="/css/output.css" rel="stylesheet" />
+    
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4913730,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4913730&101" alt="web hit counter" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+    
+  </head>
+  <body class="bg-neutral-900">
+    <%- include("./partials/navbar.ejs") %>
+
+    <main class="flex justify-center mt-10 mb-5">
+      <div class="max-w-screen-xl w-full bg-neutral-800 rounded-lg mx-3">
+        <div class="grid grid-cols-12 m-3 max-lg:grid-cols-1">
+          <div class="col-span-8 max-lg:order-2">
+              
+
+              <div class="flex">
+<!--728x90-->                  
+<script>
+document.write(atob("PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJYXRPcHRpb25zID0gewoJCSdrZXknIDogJ2IxODJiNGZlZDExMjFmZDhjMTIzYWJiMzJhNjgxYTMwJywKCQknZm9ybWF0JyA6ICdpZnJhbWUnLAoJCSdoZWlnaHQnIDogOTAsCgkJJ3dpZHRoJyA6IDcyOCwKCQkncGFyYW1zJyA6IHt9Cgl9Owo8L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iLy9jYXJyeWdsYW5jZWQuY29tL2IxODJiNGZlZDExMjFmZDhjMTIzYWJiMzJhNjgxYTMwL2ludm9rZS5qcyI+PC9zY3JpcHQ+"))
+</script>
+<!--728x90--> 
+</div>
+  
+  <br />            
+         
+            <input
+              type="text"
+              class="form-control mb-6"
+              placeholder="Search Game/Event ..."
+              id="searchGames"
+            />
+
+            <%- include("./partials/main.ejs") %>
+          </div>
+
+          <div
+            class="col-span-4 flex flex-col items-center gap-3 max-lg:order-1 mb-6"
+          >
+
+<!--160x300-->
+<script>
+document.write(atob("PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJYXRPcHRpb25zID0gewoJCSdrZXknIDogJzI5MDRiNzU3MTU3MGQ4N2Y2YTE5MjQxMWFjMDExNmE1JywKCQknZm9ybWF0JyA6ICdpZnJhbWUnLAoJCSdoZWlnaHQnIDogMzAwLAoJCSd3aWR0aCcgOiAxNjAsCgkJJ3BhcmFtcycgOiB7fQoJfTsKPC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii8vY2FycnlnbGFuY2VkLmNvbS8yOTA0Yjc1NzE1NzBkODdmNmExOTI0MTFhYzAxMTZhNS9pbnZva2UuanMiPjwvc2NyaXB0Pg=="))
+</script>
+<!--160x300-->
+
+<!--160x600-->
+<script>
+document.write(atob("PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJYXRPcHRpb25zID0gewoJCSdrZXknIDogJzM2NGZkZTcwMzQxNDQ2NTk3ZGQ2YmM2OWY0NmI0MzE2JywKCQknZm9ybWF0JyA6ICdpZnJhbWUnLAoJCSdoZWlnaHQnIDogNjAwLAoJCSd3aWR0aCcgOiAxNjAsCgkJJ3BhcmFtcycgOiB7fQoJfTsKPC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii8vY2FycnlnbGFuY2VkLmNvbS8zNjRmZGU3MDM0MTQ0NjU5N2RkNmJjNjlmNDZiNDMxNi9pbnZva2UuanMiPjwvc2NyaXB0Pg=="))
+</script>
+<!--160x600-->
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $("#searchGames").on("input", function () {
+        const input = $(this).val().toLowerCase();
+
+        $(".schedule-card").each(function () {
+          if ($(this).text().toLowerCase().includes(input)) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

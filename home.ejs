@@ -1,0 +1,164 @@
+<!--DOCTYPE html-->
+<html lang="en">
+  <head>
+      <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4915398,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4915398&amp;101" alt="free stats" border="0" /></a></noscript>
+<!-- Histats.com  END  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPORTSONLINE - LIVE STREAMS</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Den%C3%ADk_Sport_logo.svg/1200px-Den%C3%ADk_Sport_logo.svg.png"
+          alt="Logo"
+          class="logo"
+        />
+        <!--<div class="nav-links">-->
+        <!--  <a href="https://v2.sportsonline.pro/">Home</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/soccerstreams.html">Soccer</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/nbasports.html">NBA</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/nhlsports.html">NHL</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/mlbsports.html">MLB</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/nflsports.html">NFL</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/mmasports.html">MMA</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/boxingsports.html">BOXING</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/wwe.html">WWE</a>-->
+        <!--  <a href="https://v2.sportsonline.pro/p/mlssports.html">MLS</a>-->
+
+        <!--  <a href="https://v2.sportsonline.pro/p/wnbasports.html">WNBA</a>-->
+        <!--</div>-->
+      </div>
+      <div class="toggle-container">
+        <span class="toggle-label">Dark Mode</span>
+        <label class="toggle">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-section">
+        <center>
+          <script type="text/javascript">
+            atOptions = {
+              key: "a0859714b2709fc90fb5ab6c9089815c",
+              format: "iframe",
+              height: 90,
+              width: 728,
+              params: {},
+            };
+          </script>
+          <script
+            type="text/javascript"
+            src="//starkdevicelocust.com/a0859714b2709fc90fb5ab6c9089815c/invoke.js"
+          ></script>
+        </center>
+
+        <div class="matches-container">
+          <% competitions.forEach((competition)=>{ %> <%
+          if(competition.streams.length > 0){ %>
+
+          <!-- League Title Section -->
+          <div class="league-title">
+            <img
+              src="<%=BASE_URL%><%= competition.competition_logo %>"
+              alt="<%= competition.competition_name %>"
+            />
+            <span><%= competition.competition_name %></span>
+          </div>
+
+          <% competition.streams.forEach((stream)=>{ %>
+
+          <div class="match-box">
+            <a
+              href="/event/<%= stream.event_url_string %>/<%= stream.id %>"
+              class="match-link-overlay"
+            ></a>
+            <div class="teams">
+              <img
+                src="<%=BASE_URL%><%= competition.competition_logo %>"
+                alt="Team 1"
+              />
+              <span><%= stream.title %> </span>
+            </div>
+            <div class="match-time">
+              <%= moment .tz(stream.date_time, "America/New_York")
+              .format("hh:mm A") %> ET
+            </div>
+          </div>
+
+          <% }) %> <% } %> <% }) %>
+        </div>
+
+        <!-- Add more matches/leagues similarly -->
+      </div>
+
+      <div class="right-section">
+        <center>
+          <script type="text/javascript">
+            atOptions = {
+              key: "f0ba85d7ac3c5abf6b70a3dc46926775",
+              format: "iframe",
+              height: 600,
+              width: 160,
+              params: {},
+            };
+          </script>
+          <script
+            type="text/javascript"
+            src="//starkdevicelocust.com/f0ba85d7ac3c5abf6b70a3dc46926775/invoke.js"
+          ></script>
+
+          <script type="text/javascript">
+            atOptions = {
+              key: "532c2ee0d101b1f7351588131245000c",
+              format: "iframe",
+              height: 300,
+              width: 160,
+              params: {},
+            };
+          </script>
+          <script
+            type="text/javascript"
+            src="//starkdevicelocust.com/532c2ee0d101b1f7351588131245000c/invoke.js"
+          ></script>
+        </center>
+      </div>
+    </div>
+    <script>
+      // Optional: Add script to mark active link on click
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".nav-links a");
+        links.forEach((link) => {
+          link.addEventListener("click", function () {
+            links.forEach((l) => l.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+
+      const toggleCheckbox = document.querySelector(".toggle input");
+
+      toggleCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("dark-mode");
+        } else {
+          document.body.classList.remove("dark-mode");
+        }
+      });
+    </script>
+  </body>
+</html>
